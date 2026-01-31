@@ -1780,3 +1780,63 @@ nav {
         background-color: rgba(255, 255, 255, 0.1);
     }
 }
+
+/* Estilos para la nueva sección de contacto */
+.footer-contact h3 {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.contact-info {
+    list-style: none;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-info i {
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.contact-info span {
+    line-height: 1.5;
+}
+
+[data-theme="dark"] .contact-info li {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="dark"] .contact-info i {
+    color: var(--primary-light);
+}
+
+/* Actualiza el grid del footer */
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
