@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecoDev | Desarrollador Multiplataforma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cursor personalizado -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    
+    <!-- Header y Navegación -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <i class="fas fa-terminal"></i>
+                    <span class="logo-text">Teco<span class="logo-highlight">Dev</span></span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#presentacion" class="nav-link">Inicio</a></li>
+                    <li><a href="#tecnologias" class="nav-link">Tecnologías</a></li>
+                    <li><a href="#formacion" class="nav-link">Formación</a></li>
+                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li>
+                        <button class="theme-toggle" id="themeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Hero / Presentación -->
+    <section class="hero" id="presentacion">
+        <div class="hero-particles" id="particles"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">
+                        <i class="fas fa-code"></i>
+                        <span>Desarrollador Full Stack</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Hola, soy</span>
+                        <span class="title-highlight">Teco<span class="logo-highlight">Dev</span></span>
+                    </h1>
+                    <h2 class="hero-subtitle">Desarrollador de Software <span class="text-gradient">Multiplataforma</span></h2>
+                    <p class="hero-description">
+                        Especializado en crear aplicaciones web modernas, funcionales y escalables. 
+                        Combino una excelente experiencia de usuario con una arquitectura sólida y mantenible.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#proyectos" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            Ver Proyectos
+                        </a>
+                        <a href="#contacto" class="btn btn-outline">
+                            <i class="fas fa-paper-plane"></i>
+                            Contáctame
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-count="10">0</span>
+                            <span class="stat-label">Proyectos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="3">0</span>
+                            <span class="stat-label">Años Exp.</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="1">0</span>
+                            <span class="stat-label">Clientes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="window-title">tecodev.js</span>
+                        </div>
+                        <div class="window-content">
+                            <pre><code class="javascript">
+<span class="code-keyword">class</span> <span class="code-class">TecoDev</span> {
+  <span class="code-function">constructor</span>() {
+    <span class="code-this">this</span>.nombre = <span class="code-string">"Desarrollador Multiplataforma"</span>;
+    <span class="code-this">this</span>.especialidad = <span class="code-string">"Full Stack Developer"</span>;
+    <span class="code-this">this</span>.tecnologias = [
+      <span class="code-string">"React"</span>, <span class="code-string">"Angular"</span>, 
+      <span class="code-string">"Node.js"</span>, <span class="code-string">"MongoDB"</span>
+    ];
+  }
+
+  <span class="code-function">desarrollarProyecto</span>(proyecto) {
+    <span class="code-keyword">return</span> <span class="code-keyword">new</span> <span class="code-class">Promise</span>((resolve) => {
+      <span class="code-keyword">const</span> resultado = {
+        codigoLimpio: <span class="code-boolean">true</span>,
+        arquitecturaSolida: <span class="code-boolean">true</span>,
+        escalable: <span class="code-boolean">true</span>,
+        entregadoATiempo: <span class="code-boolean">true</span>
+      };
+      resolve(resultado);
+    });
+  }
+}
+
+<span class="code-keyword">const</span> desarrollador = <span class="code-keyword">new</span> <span class="code-class">TecoDev</span>();
+<span class="code-comment">// Siempre entregando soluciones de calidad</span>
+                            </code></pre>
+                        </div>
+                    </div>
+                    <div class="floating-shape shape-1"></div>
+                    <div class="floating-shape shape-2"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Desplázate</span>
+        </div>
+    </section>
+
+    <!-- Sección de Tecnologías -->
+    <section id="tecnologias" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Stack Tecnológico</span>
+                <h2 class="section-title">Tecnologías que <span class="text-gradient">Domino</span></h2>
+                <p class="section-description">
+                    Trabajo con tecnologías modernas para crear soluciones robustas y eficientes
+                </p>
+            </div>
+            
+            <div class="tech-grid">
+                <!-- Tecnologías flotantes -->
+                <div class="floating-tech" style="--delay: 0s; --x: 5%; --y: 10%;">
+                    <i class="fab fa-react"></i>
+                    <span class="tech-tooltip">React</span>
+                </div>
+                <div class="floating-tech" style="--delay: 0.5s; --x: 85%; --y: 15%;">
+                    <i class="fab fa-angular"></i>
+                    <span class="tech-tooltip">Angular</span>
+                </div>
+                <div class="floating-tech" style="--delay: 1s; --x: 15%; --y: 80%;">
+                    <i class="fab fa-node-js"></i>
+                    <span class="tech-tooltip">Node.js</span>
+                </div>
+                <div class="floating-tech" style="--delay: 1.5s; --x: 75%; --y: 70%;">
+                    <i class="fas fa-database"></i>
+                    <span class="tech-tooltip">MongoDB</span>
+                </div>
+                
+                <!-- Categorías de tecnologías -->
+                <div class="tech-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Frontend</h3>
+                    </div>
+                    <ul class="tech-list">
+                        <li>
+                            <i class="fab fa-react"></i>
+                            <span>React con TypeScript</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-angular"></i>
+                            <span>Angular</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5 & CSS3</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-bootstrap"></i>
+                            <span>Bootstrap</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Responsive Design</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="tech-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend</h3>
+                    </div>
+                    <ul class="tech-list">
+                        <li>
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js & Express</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-project-diagram"></i>
+                            <span>APIs RESTful</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-shield-alt"></i>
+                            <span>JWT & Autenticación</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-bolt"></i>
+                            <span>Optimización</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-layer-group"></i>
+                            <span>Arquitectura MVC</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="tech-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Bases de Datos</h3>
+                    </div>
+                    <ul class="tech-list">
+                        <li>
+                            <i class="fas fa-leaf"></i>
+                            <span>MongoDB</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-search"></i>
+                            <span>Consultas Optimizadas</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-sitemap"></i>
+                            <span>Diseño de Esquemas</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-sync"></i>
+                            <span>Migrations</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="tech-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Herramientas</h3>
+                    </div>
+                    <ul class="tech-list">
+                        <li>
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git & GitHub</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-vial"></i>
+                            <span>Jest Testing</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-bolt"></i>
+                            <span>Vite</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-code-branch"></i>
+                            <span>Postman</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-code"></i>
+                            <span>Clean Code</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Formación -->
+    <section id="formacion" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Mi Trayectoria</span>
+                <h2 class="section-title">Formación <span class="text-gradient">Académica</span></h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="timeline-title">
+                                <h3>Técnico Superior Universitario</h3>
+                                <span class="timeline-date">2020 - 2023</span>
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                            <h4>Tecnologías de la Información</h4>
+                            <p class="timeline-subtitle">Área: Desarrollo de Software Multiplataforma</p>
+                            <p>
+                                Durante mi formación adquirí conocimientos sólidos en análisis, diseño y desarrollo 
+                                de sistemas informáticos, programación, bases de datos, desarrollo web y metodologías 
+                                de trabajo enfocadas a proyectos reales.
+                            </p>
+                            <div class="timeline-skills">
+                                <span class="skill-tag">Análisis de Sistemas</span>
+                                <span class="skill-tag">Diseño de Software</span>
+                                <span class="skill-tag">Programación</span>
+                                <span class="skill-tag">Bases de Datos</span>
+                                <span class="skill-tag">Metodologías Ágiles</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="timeline-title">
+                                <h3>Certificaciones y Cursos</h3>
+                                <span class="timeline-date">Continuo</span>
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                            <h4>Aprendizaje Continuo</h4>
+                            <p>
+                                Me mantengo actualizado constantemente con cursos y certificaciones en las últimas 
+                                tecnologías y mejores prácticas de desarrollo.
+                            </p>
+                            <div class="certifications">
+                                <div class="certification">
+                                    <i class="fab fa-react"></i>
+                                    <span>React Avanzado</span>
+                                </div>
+                                <div class="certification">
+                                    <i class="fab fa-node-js"></i>
+                                    <span>Node.js Profesional</span>
+                                </div>
+                                <div class="certification">
+                                    <i class="fas fa-database"></i>
+                                    <span>MongoDB Expert</span>
+                                </div>
+                                <div class="certification">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>Seguridad Web</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="proyectos" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Portafolio</span>
+                <h2 class="section-title">Proyectos <span class="text-gradient">Destacados</span></h2>
+                <p class="section-description">
+                    Soluciones reales desarrolladas con las mejores prácticas
+                </p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Proyecto 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-badge">Full Stack</div>
+                        <div class="project-tech">
+                            <i class="fab fa-react"></i>
+                            <i class="fab fa-node-js"></i>
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sistema de Control de Asistencia Escolar</h3>
+                        <p class="project-description">
+                            Sistema completo para gestión de asistencias con registro por NIA o QR, 
+                            autenticación JWT y dashboard administrativo.
+                        </p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check"></i> React + Node.js + MongoDB</span>
+                            <span><i class="fas fa-check"></i> Autenticación JWT</span>
+                            <span><i class="fas fa-check"></i> Dashboard en tiempo real</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-badge">Frontend</div>
+                        <div class="project-tech">
+                            <i class="fab fa-angular"></i>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-commerce Moderno</h3>
+                        <p class="project-description">
+                            Plataforma de comercio electrónico con carrito de compras, sistema de pagos 
+                            y panel de administración.
+                        </p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check"></i> Angular + TypeScript</span>
+                            <span><i class="fas fa-check"></i> Responsive Design</span>
+                            <span><i class="fas fa-check"></i> PWA Optimizado</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-badge">Backend</div>
+                        <div class="project-tech">
+                            <i class="fab fa-node-js"></i>
+                            <i class="fas fa-database"></i>
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">API REST para Gestión de Contenidos</h3>
+                        <p class="project-description">
+                            API robusta con autenticación, autorización por roles, CRUD completo y 
+                            documentación con Swagger.
+                        </p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check"></i> Express.js + MongoDB</span>
+                            <span><i class="fas fa-check"></i> Autenticación por Roles</span>
+                            <span><i class="fas fa-check"></i> Documentación Swagger</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Documentación
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Trabajemos Juntos</span>
+                <h2 class="section-title">Contacto <span class="text-gradient">Directo</span></h2>
+                <p class="section-description">
+                    ¿Tienes un proyecto en mente? Hablemos sobre cómo puedo ayudarte.
+                </p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>contacto@tecodev.com</p>
+                            <a href="mailto:contacto@tecodev.com" class="contact-link">Enviar Email</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <p>/in/diego-salvador-tecorralco-martinez</p>
+                            <a href="https://www.linkedin.com/in/diego-salvador-tecorralco-martinez-357a85396/?originalSubdomain=mx" class="contact-link">Ver Perfil</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <p>github.com/DiegoTecorralco</p>
+                            <a href="https://github.com/DiegoTecorralco" class="contact-link">Ver Repositorios</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Ubicación</h3>
+                            <p>Disponible para trabajo remoto</p>
+                            <span class="contact-link">Global</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <!-- En la sección del formulario de contacto, cambia esto: -->
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/xykjrqez" method="POST">
+                    <!-- NO uses campo oculto para _subject aquí -->
+                    <input type="hidden" name="_replyto" value="mcteco111@gmail.com">
+                    
+                    <div class="form-group">
+                        <label for="name">
+                            <i class="fas fa-user"></i>
+                            Nombre
+                        </label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">
+                            <i class="fas fa-envelope"></i>
+                            Email
+                        </label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">
+                            <i class="fas fa-tag"></i>
+                            Asunto
+                        </label>
+                        <input type="text" id="subject" name="_subject" required> <!-- Mantén name="_subject" -->
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">
+                            <i class="fas fa-comment"></i>
+                            Mensaje
+                        </label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <!-- Campo oculto para añadir prefijo al asunto -->
+                    <input type="hidden" name="subject_prefix" value="Nuevo mensaje desde TecoDev Portfolio, ">
+                    
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-paper-plane"></i>
+                        Enviar Mensaje
+                    </button>
+                </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <i class="fas fa-terminal"></i>
+                        <span class="logo-text">Teco<span class="logo-highlight">Dev</span></span>
+                    </a>
+                    <p class="footer-description">
+                        Desarrollador de Software Multiplataforma especializado en crear soluciones web modernas y escalables.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/DiegoTecorralco" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/diego-salvador-tecorralco-martinez-357a85396/?originalSubdomain=mx" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#presentacion">Inicio</a></li>
+                        <li><a href="#tecnologias">Tecnologías</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Mantente Actualizado</h3>
+                    <p>Suscríbete para recibir novedades sobre nuevos proyectos y tecnologías.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 TecoDev. Todos los derechos reservados.</p>
+                <p>Desarrollado por DiegoTecorralco <i class="fas fa-heart"></i> </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón para ir arriba -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
