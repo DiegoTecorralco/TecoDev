@@ -25,9 +25,11 @@
                 </a>
                 <ul class="nav-links">
                     <li><a href="#presentacion" class="nav-link">Inicio</a></li>
+                    <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
                     <li><a href="#tecnologias" class="nav-link">Tecnologías</a></li>
                     <li><a href="#formacion" class="nav-link">Formación</a></li>
                     <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                    <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
                     <li><a href="#contacto" class="nav-link">Contacto</a></li>
                     <li>
                         <button class="theme-toggle" id="themeToggle">
@@ -73,16 +75,20 @@
                     </div>
                     <div class="hero-stats">
                         <div class="stat">
-                            <span class="stat-number" data-count="10">0</span>
-                            <span class="stat-label">Proyectos</span>
+                            <span class="stat-number" id="github-repos">0</span>
+                            <span class="stat-label">Repositorios</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number" data-count="3">0</span>
+                            <span class="stat-number" id="github-stars">0</span>
+                            <span class="stat-label">GitHub Stars</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="3">3</span>
+                            <span class="stat-label">Clientes Satisfechos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="3">3</span>
                             <span class="stat-label">Años Exp.</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number" data-count="1">0</span>
-                            <span class="stat-label">Clientes</span>
                         </div>
                     </div>
                 </div>
@@ -139,6 +145,163 @@
             <span>Desplázate</span>
         </div>
     </section>
+
+    <!-- =================================== -->
+    <!-- SECCIÓN: SOBRE MÍ -->
+    <!-- =================================== -->
+    <section id="sobre-mi" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Conóceme</span>
+                <h2 class="section-title">Sobre <span class="text-gradient">Mí</span></h2>
+                <p class="section-description">
+                    Técnico Superior Universitario en Tecnologías de la Información, especializado en Desarrollo de Software Multiplataforma
+                </p>
+            </div>
+            
+            <div class="about-container">
+                <div class="about-grid">
+                    <!-- Columna izquierda: Foto/avatar -->
+                    <div class="about-image-col">
+                        <div class="about-card">
+                            <div class="about-avatar">
+                                <div class="avatar-placeholder">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                            </div>
+                            <h3>Diego Salvador Tecorralco Martínez</h3>
+                            <p class="about-tagline">Desarrollador Full Stack</p>
+                            <div class="about-social">
+                                <a href="https://github.com/DiegoTecorralco" class="social-link-sm"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/diego-salvador-tecorralco-martinez-357a85396/" class="social-link-sm"><i class="fab fa-linkedin"></i></a>
+                                <a href="mailto:mcteco111@gmail.com" class="social-link-sm"><i class="fas fa-envelope"></i></a>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-block" id="downloadCvBtn">
+                                <i class="fas fa-download"></i> Descargar CV
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Columna derecha: Biografía -->
+                    <div class="about-bio-col">
+                        <div class="about-bio-card">
+                            <h3>Mi Trayectoria <i class="fas fa-rocket text-gradient"></i></h3>
+                            
+                            <div class="bio-section">
+                                <p class="bio-text">
+                                    Soy <strong>Técnico Superior Universitario en Tecnologías de la Información</strong>, área <strong>Desarrollo de Software Multiplataforma</strong>, con formación en el diseño, desarrollo e implementación de soluciones tecnológicas orientadas a la optimización de procesos y la resolución de problemas reales mediante software.
+                                </p>
+                                
+                                <p class="bio-text">
+                                    Durante mi formación y proyectos desarrollados, he adquirido experiencia en el desarrollo de aplicaciones web y sistemas informáticos, trabajando tanto en <strong>frontend como en backend</strong>, lo que me permite comprender el funcionamiento completo de una aplicación, desde la interfaz de usuario hasta la lógica del servidor y la gestión de bases de datos.
+                                </p>
+                            </div>
+                            
+                            <div class="bio-highlights">
+                                <div class="bio-highlight-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Diseño, desarrollo e implementación de soluciones tecnológicas</span>
+                                </div>
+                                <div class="bio-highlight-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Optimización de procesos y resolución de problemas reales</span>
+                                </div>
+                                <div class="bio-highlight-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Experiencia Full Stack: frontend + backend + bases de datos</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Tecnologías destacadas -->
+                            <div class="bio-tech-stack">
+                                <h4>Tecnologías que domino:</h4>
+                                <div class="tech-pills">
+                                    <span class="tech-pill"><i class="fab fa-js"></i> JavaScript/TypeScript</span>
+                                    <span class="tech-pill"><i class="fab fa-react"></i> React</span>
+                                    <span class="tech-pill"><i class="fab fa-react"></i> React Native</span>
+                                    <span class="tech-pill"><i class="fab fa-angular"></i> Angular</span>
+                                    <span class="tech-pill"><i class="fab fa-node-js"></i> Node.js</span>
+                                    <span class="tech-pill"><i class="fas fa-database"></i> MySQL</span>
+                                    <span class="tech-pill"><i class="fas fa-leaf"></i> MongoDB</span>
+                                    <span class="tech-pill"><i class="fas fa-shield-alt"></i> JWT</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sección de experiencia detallada -->
+                <div class="about-details-grid">
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4>Frontend Development</h4>
+                        <p>Desarrollo interfaces dinámicas, responsivas y centradas en la experiencia del usuario con React, Angular y TypeScript.</p>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h4>Backend Development</h4>
+                        <p>APIs RESTful con Node.js y Express, manejo de rutas, controladores y lógica del servidor para procesamiento eficiente.</p>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4>Bases de Datos</h4>
+                        <p>Manejo de MySQL y MongoDB: diseño de esquemas, consultas, respaldos y optimización del almacenamiento de datos.</p>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Seguridad</h4>
+                        <p>Autenticación con JWT, gestión de sesiones, validaciones, manejo de errores y control de acceso en sistemas web.</p>
+                    </div>
+                </div>
+                
+                <!-- Proyecto destacado -->
+                <div class="about-featured-project">
+                    <h3>Proyecto Destacado: <span class="text-gradient">Sistema de Control de Asistencia Escolar</span></h3>
+                    <div class="featured-project-content">
+                        <div class="featured-project-text">
+                            <p>Sistema web que permite registrar la asistencia de estudiantes mediante identificadores únicos, ya sea por lectura de códigos QR o ingreso manual.</p>
+                            <ul class="featured-project-list">
+                                <li><i class="fas fa-check"></i> React con TypeScript (Frontend)</li>
+                                <li><i class="fas fa-check"></i> Node.js con Express (Backend)</li>
+                                <li><i class="fas fa-check"></i> MongoDB (Base de datos)</li>
+                                <li><i class="fas fa-check"></i> Filtrado de registros y gestión de estudiantes</li>
+                                <li><i class="fas fa-check"></i> Autenticación de usuarios y visualización dinámica</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto destacado de Bienes Raíces -->
+                <div class="about-featured-project">
+                    <h3>Proyecto Destacado: <span class="text-gradient">Plataforma de Bienes Raíces</span></h3>
+                    <div class="featured-project-content">
+                        <div class="featured-project-text">
+                            <p>Sistema web para la gestión y publicación de propiedades inmobiliarias, permitiendo visualizar, filtrar y administrar inmuebles de forma sencilla y eficiente.</p>
+                            <ul class="featured-project-list">
+                                <li><i class="fas fa-check"></i> Pug (Motor de plantillas)</li>
+                                <li><i class="fas fa-check"></i> Node.js con Express (Backend)</li>
+                                <li><i class="fas fa-check"></i> MySQL (Base de datos relacional)</li>
+                                <li><i class="fas fa-check"></i> Filtrado y búsqueda de propiedades</li>
+                                <li><i class="fas fa-check"></i> Administración de inmuebles y usuarios</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
     <!-- Sección de Tecnologías -->
     <section id="tecnologias" class="section">
@@ -424,38 +587,36 @@
                 </div>
                 
                 <!-- Proyecto 2 -->
-            <!-- Proyecto 2 -->
-            <div class="project-card">
-                <div class="project-image">
-                    <div class="project-badge">Full Stack</div>
-                    <div class="project-tech">
-                        <i class="fab fa-react"></i>
-                        <i class="fab fa-node-js"></i>
-                        <i class="fas fa-database"></i>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-badge">Full Stack</div>
+                        <div class="project-tech">
+                            <i class="fab fa-react"></i>
+                            <i class="fab fa-node-js"></i>
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Plataforma de Bienes Raíces</h3>
+                        <p class="project-description">
+                            Sistema web para la gestión y publicación de propiedades inmobiliarias,
+                            permitiendo visualizar, filtrar y administrar inmuebles de forma sencilla y eficiente.
+                        </p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check"></i> Pug</span>
+                            <span><i class="fas fa-check"></i> Node.js + Express</span>
+                            <span><i class="fas fa-check"></i> MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/DiegoTecorralco/BienesRaices_TI_230374" class="project-link">
+                                <i class="fab fa-github"></i> Código
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="project-content">
-                    <h3 class="project-title">Plataforma de Bienes Raíces</h3>
-                    <p class="project-description">
-                        Sistema web para la gestión y publicación de propiedades inmobiliarias,
-                        permitiendo visualizar, filtrar y administrar inmuebles de forma sencilla y eficiente.
-                    </p>
-                    <div class="project-features">
-                        <span><i class="fas fa-check"></i> Pug</span>
-                        <span><i class="fas fa-check"></i> Node.js + Express</span>
-                        <span><i class="fas fa-check"></i> MySQL</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/DiegoTecorralco/BienesRaices_TI_230374" class="project-link">
-                            <i class="fab fa-github"></i> Código
-                        </a>
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i> Demo
-                        </a>
-                    </div>
-                </div>
-            </div>
-
                 
                 <!-- Proyecto 3 -->
                 <div class="project-card">
@@ -487,6 +648,96 @@
                             </a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================== -->
+    <!-- SECCIÓN: TESTIMONIOS -->
+    <!-- =================================== -->
+    <section id="testimonios" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Lo que dicen</span>
+                <h2 class="section-title">Testimonios <span class="text-gradient">Profesionales</span></h2>
+                <p class="section-description">
+                    Recomendaciones de personas con las que he colaborado
+                </p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonio 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Diego demostró un gran profesionalismo en el desarrollo del sistema de control de asistencia. Su capacidad para entender los requisitos y traducirlos en funcionalidades reales fue excepcional. Entregó el proyecto a tiempo y con una calidad superior."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Dr. Andrés Rivera Vera</h4>
+                            <p>Director General - Centro Escolar General Rafael Cravioto Pacheco</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonio 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Trabajar con Diego en el proyecto de Bienes Raíces fue una excelente experiencia. Su dominio de Node.js y MySQL permitió crear una plataforma robusta y escalable. Siempre dispuesto a aprender y proponer mejoras."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>M.T.I Marco Antonio Ramirez Hernandez</h4>
+                            <p>Profesor de Ingeniería de Software</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonio 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Destaco su capacidad para resolver problemas complejos y su enfoque en la calidad del código. Diego no solo se preocupa por que las cosas funcionen, sino por mantener buenas prácticas y arquitecturas limpias y mantenibles."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Carlos Fosado</h4>
+                            <p>Compañero de Desarrollo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Estadísticas de confianza -->
+            <div class="testimonials-stats">
+                <div class="testimonial-stat-item">
+                    <span class="testimonial-stat-number">+5</span>
+                    <span class="testimonial-stat-label">Proyectos Colaborativos</span>
+                </div>
+                <div class="testimonial-stat-item">
+                    <span class="testimonial-stat-number">100%</span>
+                    <span class="testimonial-stat-label">Satisfacción</span>
+                </div>
+                <div class="testimonial-stat-item">
+                    <span class="testimonial-stat-number">3+</span>
+                    <span class="testimonial-stat-label">Años de experiencia</span>
                 </div>
             </div>
         </div>
@@ -551,9 +802,7 @@
                 </div>
                 
                 <div class="contact-form-container">
-                    <!-- En la sección del formulario de contacto, cambia esto: -->
                     <form id="contactForm" class="contact-form" action="https://formspree.io/f/xykjrqez" method="POST">
-                    <!-- NO uses campo oculto para _subject aquí -->
                     <input type="hidden" name="_replyto" value="mcteco111@gmail.com">
                     
                     <div class="form-group">
@@ -577,7 +826,7 @@
                             <i class="fas fa-tag"></i>
                             Asunto
                         </label>
-                        <input type="text" id="subject" name="_subject" required> <!-- Mantén name="_subject" -->
+                        <input type="text" id="subject" name="_subject" required>
                     </div>
                     
                     <div class="form-group">
@@ -588,7 +837,6 @@
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
                     
-                    <!-- Campo oculto para añadir prefijo al asunto -->
                     <input type="hidden" name="subject_prefix" value="Nuevo mensaje desde TecoDev Portfolio, ">
                     
                     <button type="submit" class="btn btn-primary btn-block">
@@ -627,13 +875,15 @@
                     <h3>Enlaces Rápidos</h3>
                     <ul>
                         <li><a href="#presentacion">Inicio</a></li>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
                         <li><a href="#tecnologias">Tecnologías</a></li>
                         <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
                 
-            <div class="footer-contact">
+                <div class="footer-contact">
                     <h3>Contacto Directo</h3>
                     <ul class="contact-info">
                         <li>
@@ -654,7 +904,7 @@
             
             <div class="footer-bottom">
                 <p>&copy; 2026 TecoDev. Todos los derechos reservados.</p>
-                <p>Desarrollado por DiegoTecorralco <i class="fas fa-heart"></i> </p>
+                <p>Desarrollado por DiegoTecorralco <i class="fas fa-heart"></i></p>
             </div>
         </div>
     </footer>
