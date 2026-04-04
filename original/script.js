@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initParticles();
     initCVDownload();
     initTestimonialsStats();
+    initVisitCounter(); 
 });
 
 // Cursor personalizado
@@ -813,6 +814,109 @@ function initTooltips() {
         });
     });
 }
+
+// ===================================
+// CONTADOR DE VISITAS - VERSIÓN CON API CONFIABLE
+// ===================================
+
+const initVisitCounter = async () => {
+    const footer = document.querySelector('footer');
+    if (!footer) return;
+    
+    // No duplicar
+    if (document.querySelector('.visit-counter')) return;
+    
+    const counterDiv = document.createElement('div');
+    counterDiv.className = 'visit-counter';
+    counterDiv.style.cssText = `
+        text-align: center;
+        margin-top: 30px;
+        padding: 15px;
+        font-size: 0.9rem;
+        opacity: 0.7;
+        border-top: 1px solid rgba(99, 102, 241, 0.2);
+        transition: opacity 0.3s ease;
+    `;
+    
+    counterDiv.innerHTML = `
+        <i class="fas fa-eye" style="margin-right: 8px; color: var(--primary);"></i>
+        <span id="visitCount" style="font-weight: 600;">...</span>
+        <span> visitas totales</span>
+    `;
+    
+    footer.appendChild(counterDiv);
+    
+    // Usar una API diferente y más confiable
+    const updateCounter = async () => {
+        try {
+            const today = new Date().toDateString();
+            const lastVisit = localStorage.getItem('teco_last_visit');
+            const isNewDay = lastVisit !== today;
+            
+            let visitCount;
+            
+            if (isNewDay) {
+                // Incrementar contador usando HitCounter (API confiable)
+                const response = await fetch('https://api.viewcounter.com/hit/tecodev-portfolio', {
+                    method: 'GET',
+                    mode: 'cors'
+                });
+                
+                if (!response.ok) throw new Error('Error al incrementar');
+                const data = await response.json();
+                visitCount = data.count || data.value || 1;
+                localStorage.setItem('teco_last_visit', today);
+            } else {
+                // Obtener valor actual
+                const response = await fetch('https://api.viewcounter.com/get/tecodev-portfolio');
+                if (!response.ok) throw new Error('Error al obtener');
+                const data = await response.json();
+                visitCount = data.count || data.value || 0;
+            }
+            
+            const visitSpan = document.getElementById('visitCount');
+            if (visitSpan) {
+                visitSpan.textContent = visitCount;
+            }
+            
+        } catch (error) {
+            console.error('Error en contador:', error);
+            // Usar contador local como fallback
+            useLocalCounter();
+        }
+    };
+    
+    // Función de respaldo con localStorage
+    const useLocalCounter = () => {
+        let visits = localStorage.getItem('teco_local_visits');
+        if (visits === null) {
+            visits = 1;
+        } else {
+            visits = parseInt(visits) + 1;
+        }
+        localStorage.setItem('teco_local_visits', visits);
+        
+        const visitSpan = document.getElementById('visitCount');
+        if (visitSpan) {
+            visitSpan.textContent = visits;
+            // Agregar indicador de que es local
+            const parent = visitSpan.parentElement;
+            if (parent && !parent.querySelector('.local-badge')) {
+                const badge = document.createElement('span');
+                badge.className = 'local-badge';
+                badge.style.cssText = 'font-size:0.7rem;margin-left:5px;opacity:0.5';
+                badge.textContent = '(local)';
+                parent.appendChild(badge);
+            }
+        }
+    };
+    
+    // Intentar con la API principal
+    updateCounter();
+    
+    // Actualizar cada hora
+    setInterval(updateCounter, 3600000);
+};
 
 // Inicializar tooltips después de un pequeño retraso
 setTimeout(initTooltips, 1000);
